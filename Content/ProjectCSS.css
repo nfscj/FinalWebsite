@@ -104,3 +104,7 @@ body {
 .navbar-wrapper .navbar .container {
     width: 1270px;
 }
+.col-md-12{
+    padding-right: 0px;
+    padding-left: 0px;
+}

@@ -1,1 +1,5 @@
-﻿
+﻿body {
+    background-image: url('BlurredSelfie.jpg');
+    background-size:1400px 750px;
+    background-attachment:fixed;
+}

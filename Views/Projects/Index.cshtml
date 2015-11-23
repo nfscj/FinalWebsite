@@ -27,7 +27,9 @@
 
         <div>
             <h2><span class="col-md-12 label label-default">@Html.DisplayNameFor(model => model.Project1)</span></h2>
-            <div style="font-size:30px">@Html.DisplayFor(modelItem => item.Project1)</div>
+            <div style="font-size:30px">
+                @Html.DisplayFor(modelItem => item.Project1)
+            </div>
         </div>
 
 
@@ -40,7 +42,8 @@
             <div style="font-size:30px">@Html.DisplayFor(modelItem => item.SkillsUsed)</div>
         </div>
         <div>
-            <h2><span class="col-md-12 label label-default">@Html.DisplayNameFor(model => model.Description)</span>
+            <h2>
+                <span class="col-md-12 label label-default">@Html.DisplayNameFor(model => model.Description)</span>
             </h2>
             <div style="font-size:30px">@Html.DisplayFor(modelItem => item.Description)</div>
         </div>
