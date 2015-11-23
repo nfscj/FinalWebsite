@@ -1,0 +1,61 @@
+﻿@model IEnumerable<FinalWebsite.Models.Project>
+
+@{
+    ViewBag.Title = "Index";
+}
+<link href="~/Content/ProjectCSS.css" rel="stylesheet" />
+<h2 style="text-align:center;">My Projects</h2>
+
+
+
+
+@foreach (var item in Model)
+{
+
+    <div style="text-align:center;">
+
+        @Html.ActionLink("Edit", "Edit", new { id = item.ProjectID }) |
+        @Html.ActionLink("Details", "Details", new { id = item.ProjectID }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.ProjectID }) |
+        @Html.ActionLink("Create New", "Create")
+
+        <img class="col-md-12 roundrect" src="@Html.DisplayFor(modelItem => item.Screenshots)"></img>
+
+        <div>
+            <h6>Program Screenshot</h6>
+        </div>
+
+        <div>
+            <h2><span class="col-md-12 label label-default">@Html.DisplayNameFor(model => model.Project1)</span></h2>
+            <div style="font-size:30px">@Html.DisplayFor(modelItem => item.Project1)</div>
+        </div>
+
+
+
+
+        <div>
+            <h2>
+                <span class="col-md-12 label label-default">@Html.DisplayNameFor(model => model.SkillsUsed)</span>
+            </h2>
+            <div style="font-size:30px">@Html.DisplayFor(modelItem => item.SkillsUsed)</div>
+        </div>
+        <div>
+            <h2><span class="col-md-12 label label-default">@Html.DisplayNameFor(model => model.Description)</span>
+            </h2>
+            <div style="font-size:30px">@Html.DisplayFor(modelItem => item.Description)</div>
+        </div>
+
+        <div>
+            <h2><span class="col-md-12 label label-default">@Html.DisplayNameFor(model => model.GitHubLink)</span>
+                
+            </h2>
+            <div style="font-size:30px">@Html.DisplayFor(modelItem => item.GitHubLink)</div>
+        </div>
+       
+                
+        
+      
+    </div>
+}
+
+
