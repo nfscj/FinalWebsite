@@ -27,32 +27,29 @@
 
         <div>
             <h2><span class="col-md-12 label label-default">@Html.DisplayNameFor(model => model.Project1)</span></h2>
-            <div style="font-size:30px">
+            <div style="font-size:30px;font-family:'Times New Roman'">
                 @Html.DisplayFor(modelItem => item.Project1)
             </div>
         </div>
-
-
-
 
         <div>
             <h2>
                 <span class="col-md-12 label label-default">@Html.DisplayNameFor(model => model.SkillsUsed)</span>
             </h2>
-            <div style="font-size:30px">@Html.DisplayFor(modelItem => item.SkillsUsed)</div>
+            <div style="font-size:30px;font-family:'Times New Roman';">@Html.DisplayFor(modelItem => item.SkillsUsed)</div>
         </div>
         <div>
             <h2>
                 <span class="col-md-12 label label-default">@Html.DisplayNameFor(model => model.Description)</span>
             </h2>
-            <div style="font-size:30px">@Html.DisplayFor(modelItem => item.Description)</div>
+            <div style="font-size:30px;font-family:'Times New Roman'">@Html.DisplayFor(modelItem => item.Description)</div>
         </div>
 
         <div>
             <h2><span class="col-md-12 label label-default">@Html.DisplayNameFor(model => model.GitHubLink)</span>
                 
             </h2>
-            <div style="font-size:30px">@Html.DisplayFor(modelItem => item.GitHubLink)</div>
+            <div style="font-size:30px;font-family:'Times New Roman'"><a href="@Html.DisplayFor(modelItem => item.GitHubLink)" target="_blank"></a>@Html.DisplayFor(modelItem => item.GitHubLink)</div>
         </div>
        
                 
