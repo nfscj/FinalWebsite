@@ -6,7 +6,6 @@
 //     Manual changes to this file will be overwritten if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-using System.ComponentModel.DataAnnotations;
 
 namespace FinalWebsite.Models
 {
@@ -16,13 +15,9 @@ namespace FinalWebsite.Models
     public partial class Project
     {
         public int ProjectID { get; set; }
-        [Display(Name = "Project")]
         public string Project1 { get; set; }
-        [Display(Name = "Skills Showcased")]
         public string SkillsUsed { get; set; }
-        [Display(Name = "Project Description")]
         public string Description { get; set; }
-        [Display(Name = "GitHub Link")]
         public string GitHubLink { get; set; }
         public string Screenshots { get; set; }
     }
