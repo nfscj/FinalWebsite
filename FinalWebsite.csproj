@@ -214,6 +214,7 @@
     <Content Include="Content\ProjectCSS.css" />
     <Content Include="favicon.ico" />
     <Content Include="FinalWebPhotos\AboutMe.jpg" />
+    <Content Include="FinalWebPhotos\Platformer.JPG" />
     <Content Include="FinalWebPhotos\SimpleCalculatorPro.JPG" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

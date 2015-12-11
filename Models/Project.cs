@@ -11,13 +11,18 @@ namespace FinalWebsite.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Project
     {
+        
         public int ProjectID { get; set; }
+        [Display(Name = "Project")]
         public string Project1 { get; set; }
+        [Display(Name = "Skills Used")]
         public string SkillsUsed { get; set; }
         public string Description { get; set; }
+        [Display(Name = "GitHub Link")]
         public string GitHubLink { get; set; }
         public string Screenshots { get; set; }
     }
